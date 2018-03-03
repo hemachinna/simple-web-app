@@ -37,7 +37,6 @@
 				<version>${mitreid-connect-version}</version>
 				<type>pom</type>
 				<scope>import</scope>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	
@@ -200,3 +199,9 @@
 	</build>
 	<name>simple-web-app</name>
 </project>
+<distributionManagement>
+  <repository>
+    <id>nexus_jenkins</id>
+    <url>http://localhost:8081/nexus/content/repositories/nexus_jenkins</url>
+  </repository>
+</distributionManagement>	
