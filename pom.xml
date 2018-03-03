@@ -205,11 +205,4 @@
 	</build>
 	<name>simple-web-app</name>
 	
-<distributionManagement>
-  <repository>
-    <id>releases</id>
-    <url>http://192.168.31.237:8081/nexus/content/repositories/releases</url>
-  </repository>
-</distributionManagement>
- 	
 </project>
