@@ -127,12 +127,7 @@
 		</dependency>
 	
 		<!-- Test -->
-<distributionManagement>
-  <repository>
-    <id>releases</id>
-    <url>http://localhost:8081/nexus/content/repositories/releases</url>
-  </repository>
-</distributionManagement>		<dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
