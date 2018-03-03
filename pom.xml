@@ -149,7 +149,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
-192.168.31.237				<configuration>
+				<configuration>
 					<source>${java-version}</source>
 					<target>${java-version}</target>
 				</configuration>
@@ -199,12 +199,11 @@
 		</plugins>
 	</build>
 	<name>simple-web-app</name>
-	<distributionManagement>
+<distributionManagement>
   <repository>
-    <id>nexus_jenkins</id>
-    <url>http://localhost:8081/nexus/content/repositories/nexus_jenkins</url>
+    <id>releases</id>
+    <url>http://localhost:8081/nexus/content/repositories/releases</url>
   </repository>
 </distributionManagement>
-		
-</project>
 	
+</project>
