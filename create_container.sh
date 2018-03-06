@@ -10,6 +10,6 @@ for i in `seq $a`
 do
 echo "==========================="
 sleep 2
-docker run -it -d --name hemanth$i jenkins /bin/bash
+docker run -it  --name hemanth$i jenkins /bin/bash
 echo "container is created $i"
 done
