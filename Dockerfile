@@ -10,5 +10,5 @@ RUN apt-get update
 RUN apt-get install -y vim
 RUN apt-get update
 RUN apt-get install -y net-tools
-ENTRYPOINT cp ${WORKSPACE}/jenkins/target/simple-web-app.war /usr/local/tomcat/webapps
+COPY ${WORKSPACE}/jenkins/target/simple-web-app.war /usr/local/tomcat/webapps
 ENTRYPOINT cd /usr/local/tomcat/bin/./startup.sh
