@@ -11,4 +11,10 @@ RUN apt-get install -y vim
 RUN apt-get update
 RUN apt-get install -y net-tools
 COPY ${WORKSPACE}/target/simple-web-app.war /usr/local/tomcat/webapps
+EXPOSE 8080
+CMD service tomcat start && tail -f /usr/local/tomcat/logs
+
+
+
+
 #ENTRYPOINT cd /usr/local/tomcat/bin/./startup.sh
