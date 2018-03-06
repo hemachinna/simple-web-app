@@ -12,5 +12,4 @@ echo "==========================="
 sleep 2
 docker run -it -d --name hemanth$i jenkins /bin/bash
 echo "container is created $i"
-CMD service tomcat start && tail -f /usr/local/tomcat/logs
 done
